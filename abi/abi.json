@@ -1,0 +1,17 @@
+[
+  {
+    "inputs": [
+      {"internalType": "address", "name": "user", "type": "address"},
+      {"internalType": "address", "name": "tokenIn", "type": "address"},
+      {"internalType": "address", "name": "tokenOut", "type": "address"},
+      {"internalType": "uint256", "name": "amountIn", "type": "uint256"},
+      {"internalType": "uint256", "name": "minAmountOut", "type": "uint256"},
+      {"internalType": "address", "name": "target", "type": "address"},
+      {"internalType": "bytes", "name": "data", "type": "bytes"}
+    ],
+    "name": "execute",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  }
+]
