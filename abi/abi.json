@@ -1,16 +1,23 @@
 [
   {
     "inputs": [
-      {"internalType": "address", "name": "user", "type": "address"},
-      {"internalType": "address", "name": "tokenIn", "type": "address"},
-      {"internalType": "address", "name": "tokenOut", "type": "address"},
-      {"internalType": "uint256", "name": "amountIn", "type": "uint256"},
-      {"internalType": "uint256", "name": "minAmountOut", "type": "uint256"},
-      {"internalType": "address", "name": "target", "type": "address"},
-      {"internalType": "bytes", "name": "data", "type": "bytes"}
+      {
+        "components": [
+          {"internalType": "address", "name": "tokenIn", "type": "address"},
+          {"internalType": "address", "name": "tokenOut", "type": "address"},
+          {"internalType": "uint256", "name": "amountIn", "type": "uint256"},
+          {"internalType": "uint256", "name": "minAmountOut", "type": "uint256"},
+          {"internalType": "address", "name": "recipient", "type": "address"}
+        ],
+        "internalType": "struct IntentExecutor.Intent",
+        "name": "intent",
+        "type": "tuple"
+      }
     ],
-    "name": "execute",
-    "outputs": [],
+    "name": "executeIntent",
+    "outputs": [
+      {"internalType": "uint256", "name": "amountOut", "type": "uint256"}
+    ],
     "stateMutability": "payable",
     "type": "function"
   }
